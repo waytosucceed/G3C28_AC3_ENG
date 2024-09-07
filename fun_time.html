@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Time</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="Logo_last.png">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* Style for the header */
+        .header {
+            position: fixed; /* Fixes the header at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0);
+            padding-bottom: 10px;
+            background-color: white; /* Ensure the header background is solid */
+            z-index: 1000; /* Ensures the header stays above other content */
+        }
+
+        /* Style for the background section */
+        .background-section {
+            background-image: url("border.png");
+            background-size: cover; /* Ensures the background image covers the section */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .background-section h1 {
+                font-size: 2rem;
+            }
+
+            .background-section p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .background-section h1 {
+                font-size: 1.5rem;
+            }
+
+            .background-section p {
+                font-size: 0.875rem;
+            }
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Ensures borders are joined together */
+            margin-bottom: 20px; /* Add some space below the table */
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Light grey border for table cells */
+            padding: 8px; /* Space within each cell */
+            text-align: center; /* Aligns text to the left within cells */
+        }
+
+        th {
+            background-color: #f4f4f4; /* Light grey background for header cells */
+            font-weight: bold; /* Make header text bold */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Zebra striping for table rows */
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; /* Highlight row on hover */
+        }
+
+        .btn-primary {
+            height: 50px; 
+            width: 200px; 
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+        <span><img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+    </div>
+
+    <div class="background-section">
+        <div class="container" style="font-size: 22px; padding:8% 0% 0% 0%">
+            <h1 class="text-warning fw-5"><u>Words that I learnt from the story</u></h1>
+            <br>
+            <table>
+                <tr>
+                    <th>Words</th>
+                    <th>Meaning</th>
+                    <th>Sentence</th>
+                </tr>
+                <tr style="background-color: rgba(127, 255, 212, 0.477);">
+                    <td>Cosy</td>
+                    <td>Warm and comfortable</td>
+                    <td>The cat curled up in a cosy blanket on the couch.</td>
+                </tr>
+                <tr style="background-color: rgb(255, 249, 127);">
+                    <td>Energetic</td>
+                    <td>Full of energy and excitement</td>
+                    <td>The energetic puppy ran around the yard, wagging its tail.</td>
+                </tr>
+                <tr style="background-color: rgba(210, 127, 255, 0.419);">
+                    <td>Perplexed</td>
+                    <td>Confused or puzzled</td>
+                    <td>Sarah was perplexed by the tricky math problem.</td>
+                </tr>
+                <tr style="background-color: rgba(255, 127, 127, 0.503);">
+                    <td>Sceptical</td>
+                    <td>Doubtful or not sure about something</td>
+                    <td>Tom was sceptical about trying the strange new food.</td>
+                </tr>
+                <tr style="background-color: rgba(127, 255, 212, 0.477);">
+                    <td>Enthusiasm</td>
+                    <td>Strong excitement about something</td>
+                    <td>The students showed great enthusiasm during the science experiment.</td>
+                </tr>
+                <tr style="background-color: rgb(255, 249, 127);">
+                    <td>Wilderness</td>
+                    <td>A natural area where no people live</td>
+                    <td>The hikers explored the wilderness, looking for animals.</td>
+                </tr>
+                <tr style="background-color: rgba(210, 127, 255, 0.419);">
+                    <td>Captivated</td>
+                    <td>To hold someone's attention completely</td>
+                    <td>The kids were captivated by the magician’s tricks.</td>
+                </tr>
+                <tr style="background-color: rgba(255, 127, 127, 0.503);">
+                    <td>Eagerly</td>
+                    <td>With great excitement or interest</td>
+                    <td>Lisa eagerly waited for her birthday party to start.</td>
+                </tr>
+                <tr style="background-color: rgba(127, 255, 212, 0.477);">
+                    <td>Annual</td>
+                    <td>Happening once every year</td>
+                    <td>Our town has an annual picnic every summer.</td>
+                </tr>
+                <tr style="background-color: rgb(255, 249, 127);">
+                    <td>Trudged</td>
+                    <td>To walk slowly and with heavy steps.</td>
+                    <td>The tired boy trudged home after a long day at school.</td>
+                </tr>
+                <tr style="background-color: rgba(210, 127, 255, 0.419);">
+                    <td>Predicament</td>
+                    <td>A difficult or unpleasant situation.</td>
+                    <td>Tim found himself in a predicament when he lost his homework.</td>
+                </tr>
+                <tr style="background-color: rgba(255, 127, 127, 0.503);">
+                    <td>Exclaimed</td>
+                    <td>Said something loudly and suddenly because of strong feelings.</td>
+                    <td>"Wow, that was amazing!" she exclaimed after the show.</td>
+                </tr>
+                <tr style="background-color: rgba(127, 255, 212, 0.477);">
+                    <td>Contagious</td>
+                    <td>Easily spread from one person to another</td>
+                    <td>Laughter is contagious, and soon everyone was laughing together.</td>
+                </tr>
+                <tr style="background-color: rgb(255, 249, 127);">
+                    <td>Constellations</td>
+                    <td>Groups of stars that form a pattern in the sky.</td>
+                    <td>We looked up at the night sky and saw beautiful constellations.</td>
+                </tr>
+                <tr style="background-color: rgba(210, 127, 255, 0.419);">
+                    <td>Eagerly</td>
+                    <td>With great excitement or interest.</td>
+                    <td>She eagerly waited for her friend to arrive.</td>
+                </tr>
+                <tr style="background-color: rgba(255, 127, 127, 0.503);">
+                    <td>Newfound</td>
+                    <td>Recently discovered or experienced.</td>
+                    <td>Jack’s newfound love for reading made him very happy.</td>
+                </tr>
+                <tr style="background-color: rgba(127, 255, 212, 0.477);">
+                    <td>Effort</td>
+                    <td>Trying hard to do something.</td>
+                    <td>With a little effort, she solved the puzzle easily.</td>
+                </tr>
+                <tr style="background-color: rgb(255, 249, 127);">
+                    <td>Discovered</td>
+                    <td>Found or learned about something new.</td>
+                    <td>They discovered a hidden cave in the forest.</td>
+                </tr>
+                <tr style="background-color: rgba(210, 127, 255, 0.419);">
+                    <td>Transforming</td>
+                    <td>Changing completely.</td>
+                    <td>The caterpillar was slowly transforming into a butterfly.</td>
+                </tr>
+            </table>
+
+            <div class="text-center mt-5">
+                <a href="homophone.html" class="btn btn-primary mb-5 text-center">Thunder Blunder</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</body>
+</html>
